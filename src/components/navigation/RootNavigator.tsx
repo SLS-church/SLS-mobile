@@ -1,12 +1,12 @@
 import {
-  createStackNavigator,
-  StackNavigationProp,
-} from '@react-navigation/stack';
+  createBottomTabNavigator,
+  BottomTabNavigationProp,
+} from '@react-navigation/bottom-tabs';
 
 import React from 'react';
-import HomePage from '@/components/screen/HomePage';
+import { HomePage, Youtube } from '../screen';
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export type RootStackParamList = {
   HomePage: undefined;
@@ -14,17 +14,14 @@ export type RootStackParamList = {
 
 export type RootStackNavigationProps<
   T extends keyof RootStackParamList = 'HomePage'
-> = StackNavigationProp<RootStackParamList, T>;
+> = BottomTabNavigationProp<RootStackParamList, T>;
 
 function RootNavigator(): React.ReactElement {
   return (
-    <Stack.Navigator
-      initialRouteName="HomePage"
-      screenOptions={{
-        headerShown: false,
-      }}>
-      <Stack.Screen name="HomePage" component={HomePage} />
-    </Stack.Navigator>
+    <Tab.Navigator initialRouteName="HomePage">
+      <Tab.Screen name="HomePage" component={HomePage} />
+      <Tab.Screen name="Youtube" component={Youtube} />
+    </Tab.Navigator>
   );
 }
 
