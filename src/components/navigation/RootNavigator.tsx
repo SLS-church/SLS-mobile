@@ -28,7 +28,11 @@ function RootNavigator(): React.ReactElement {
             return (
               <Image
                 source={images.SLS}
-                style={{ width: size, height: size }}
+                style={{
+                  width: size,
+                  height: size,
+                  tintColor: focused ? null : 'gray',
+                }}
               />
             );
           } else if (route.name === 'Youtube') {

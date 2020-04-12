@@ -1,5 +1,5 @@
 const images = {
-  SLS: require('assets/images/SLS.jpg'),
+  SLS: require('assets/images/SLS.png'),
 };
 
 export default images;
