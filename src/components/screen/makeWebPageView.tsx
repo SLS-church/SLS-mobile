@@ -10,7 +10,6 @@ interface Props {
 const makeWebPageView = (uri: string) => {
   function HomePage({ navigation }: Props): React.ReactElement {
     const [resetting, setResetting] = useState<boolean>(true);
-    const [loading, setLoading] = useState<boolean>(true);
 
     const reload = () => {
       setResetting(true);
