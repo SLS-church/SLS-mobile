@@ -1,0 +1,37 @@
+import React, { useEffect, useState } from 'react';
+import { WebView } from 'react-native-webview';
+import { SafeAreaView } from 'react-native';
+import { RootStackNavigationProps } from '../navigation/RootNavigator';
+
+interface Props {
+  navigation: RootStackNavigationProps;
+}
+
+const makeWebPageView = (uri: string) => {
+  function HomePage({ navigation }: Props): React.ReactElement {
+    const [resetting, setResetting] = useState<boolean>(true);
+
+    const reload = () => {
+      setResetting(true);
+    };
+    useEffect(() => {
+      navigation.addListener('tabPress', () => {
+        // Prevent default behavior
+        reload();
+      });
+    }, [navigation]);
+    useEffect(() => {
+      if (resetting) {
+        setResetting(false);
+      }
+    }, [resetting]);
+    return (
+      <SafeAreaView style={{ flex: 1 }}>
+        {resetting ? <></> : <WebView source={{ uri: uri }} />}
+      </SafeAreaView>
+    );
+  }
+  return HomePage;
+};
+
+export default makeWebPageView;
