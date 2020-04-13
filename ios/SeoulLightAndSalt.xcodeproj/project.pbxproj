@@ -774,6 +774,7 @@
 				);
 				INFOPLIST_FILE = SeoulLightAndSalt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -796,6 +797,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = SeoulLightAndSalt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
