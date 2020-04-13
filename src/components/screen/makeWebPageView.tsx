@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { WebView } from 'react-native-webview';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, ActivityIndicator } from 'react-native';
 import { RootStackNavigationProps } from '../navigation/RootNavigator';
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
 const makeWebPageView = (uri: string) => {
   function HomePage({ navigation }: Props): React.ReactElement {
     const [resetting, setResetting] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const reload = () => {
       setResetting(true);
@@ -27,7 +28,22 @@ const makeWebPageView = (uri: string) => {
     }, [resetting]);
     return (
       <SafeAreaView style={{ flex: 1 }}>
-        {resetting ? <></> : <WebView source={{ uri: uri }} />}
+        {
+          resetting
+            ?
+            <></>
+            :
+            <WebView
+              startInLoadingState
+              renderLoading={() =>
+                <ActivityIndicator
+                  style={{ position: 'absolute', top: 200, alignSelf: 'center' }}
+                  size="large"
+                  color="#0000ff" />
+              }
+              allowsFullscreenVideo
+              source={{ uri: uri }} />
+        }
       </SafeAreaView>
     );
   }
