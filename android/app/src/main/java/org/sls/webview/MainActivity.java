@@ -1,4 +1,4 @@
-package com.seoullightandsalt;
+package org.sls.webview;
 
 import com.facebook.react.ReactActivity;
 
