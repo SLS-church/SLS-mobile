@@ -38,7 +38,7 @@ function RootNavigator(): React.ReactElement {
           } else if (route.name === 'Youtube') {
             return <Ionicons name="logo-youtube" size={size} color={color} />;
           } else if (route.name === 'Profile') {
-            return <Ionicons name="person-outline" size={size} color={color} />;
+            return <Ionicons name="md-person" size={size} color={color} />;
           }
 
           // You can return any component that you like here!

@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import QRCode from 'react-native-qrcode-svg';
+import { Alert } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import colors from '@/theme/colors';
 
 const Container = styled.View`
   flex: 1;
@@ -53,15 +56,19 @@ function Profile(): React.ReactElement {
   const [name, setName] = React.useState<string>('');
   const [contact, setContact] = React.useState<string>('');
   const [inputState, setInputState] = React.useState<InputState>(InputState.Null);
-  const [QRCodeView, setQRCodeView] = React.useState<React.ReactElement>(<></>);
+  const [QRCodeView, setQRCodeView] = React.useState<React.ReactElement>(null);
 
   const generateQRCode = () => {
-    setQRCodeView(
-      <QRCode
-        value={`이름:${name}, 연락처:${contact}`}
-        size={200}
-      />
-    );
+    if (name.length > 0 && contact.length > 0) {
+      setQRCodeView(
+        <QRCode
+          value={`이름:${name}, 연락처:${contact}`}
+          size={200}
+        />
+      );
+    } else {
+      Alert.alert('', '이름과 연락처를 입력해주세요.')
+    }
   }
 
   return (
@@ -106,7 +113,7 @@ function Profile(): React.ReactElement {
         <TextLabel>QRCode</TextLabel>
         <InputButton
           onPress={() => generateQRCode()}>
-          <TextContent>생성하기</TextContent>
+          {QRCodeView ? <Ionicons name="md-refresh" size={20} color={colors.lightBlue} /> : <TextContent>생성하기</TextContent>}
         </InputButton>
       </Row>
       <QRContainer>
