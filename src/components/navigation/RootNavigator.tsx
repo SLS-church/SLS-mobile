@@ -5,7 +5,7 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import React from 'react';
-import { HomePage, Youtube } from '../screen';
+import { HomePage, Youtube, Profile } from '../screen';
 import { Image } from 'react-native';
 import images from '@/theme/images';
 
@@ -17,7 +17,7 @@ export type RootStackParamList = {
 
 export type RootStackNavigationProps<
   T extends keyof RootStackParamList = 'HomePage'
-> = BottomTabNavigationProp<RootStackParamList, T>;
+  > = BottomTabNavigationProp<RootStackParamList, T>;
 
 function RootNavigator(): React.ReactElement {
   return (
@@ -31,12 +31,14 @@ function RootNavigator(): React.ReactElement {
                 style={{
                   width: size,
                   height: size,
-                  tintColor: focused ? null : 'gray',
+                  tintColor: focused ? undefined : 'gray',
                 }}
               />
             );
           } else if (route.name === 'Youtube') {
             return <Ionicons name="logo-youtube" size={size} color={color} />;
+          } else if (route.name === 'Profile') {
+            return <Ionicons name="person-outline" size={size} color={color} />;
           }
 
           // You can return any component that you like here!
@@ -45,6 +47,7 @@ function RootNavigator(): React.ReactElement {
       initialRouteName="HomePage">
       <Tab.Screen name="HomePage" component={HomePage} />
       <Tab.Screen name="Youtube" component={Youtube} />
+      <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
   );
 }
