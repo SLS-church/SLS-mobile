@@ -5,42 +5,57 @@ import WebView from 'react-native-webview';
 import colors from '@/theme/colors';
 import { useNavigation } from '@react-navigation/core';
 import { MainTabNavigationProps } from '../navigation/MainTabNavigator';
-import { ActivityIndicator, Alert } from 'react-native';
+import { ActivityIndicator, Alert, View } from 'react-native';
 import { QRCARD_URL, QRCODE_APPLY_URL, STORAGE_KEY_QRCODE_ID } from '@/constant';
 
 
-const Container = styled.SafeAreaView`
+const Container = styled.View`
   flex: 1;
   justify-content: center;
+  padding: 15px;
+  background-color: ${colors.white};
 `;
 
 const Row = styled.View`
   flex-direction: row;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
-const TextLabel = styled.Text`
-  font-size: 16px;
-  margin-left: 15px;
+const TextContent = styled.Text`
+  font-size: 24px;
+  font-weight: bold;
 `;
 
-const TextContent = styled(TextLabel)`
+const TextLabel = styled(TextContent)`
+`;
+
+const TextButton = styled.Text`
+  font-size: 20px;
+  font-weight: bold;
+  color: ${colors.azure};
 `;
 
 const InputButton = styled.TouchableOpacity`
-  min-width: 100px;
+  min-width: 50px;
   justify-content: center;
+  align-items: center;
+  border-color: ${colors.lightBlue};
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 5px 10px;
 `;
 
 const TextInput = styled.TextInput`
-  font-size: 16px;
+  font-size: 20px;
   flex: 1;
   height: 40px;
   border-color: gray;
   border-width: 1px;
   border-radius: 4px;
-  margin-left: 15px;
+  padding: 4px;
 `;
 
 interface Props {
@@ -171,9 +186,9 @@ function QRCard({ route }: Props): React.ReactElement {
               };
             }} /> :
           <>
-            <TextLabel>출입증 정보가 입력되지 않았습니다.</TextLabel>
-            <Row>
-              <TextLabel>출입증 발급을 요청하시겠습니까?</TextLabel>
+            <TextLabel style={{ fontSize: 20, fontWeight: '500' }}>출입증 정보가 입력되지 않았습니다.</TextLabel>
+            <Row style={{ marginTop: 0 }}>
+              <TextLabel>출입증 발급 요청을 하시겠습니까?</TextLabel>
               <InputButton onPress={() => {
                 Alert.alert('출입증 QR코드 발급요청',
                   '출입증 QR코드 발급요청을 이미 하신 경우 다시 요청하실 필요가 없습니다. 출입증 발급 요청을 하시겠습니까?', [
@@ -185,28 +200,29 @@ function QRCard({ route }: Props): React.ReactElement {
                   }
                 ])
               }}>
-                <TextContent style={{ color: colors.blue }}>확인</TextContent>
+                <TextButton >예</TextButton>
               </InputButton>
             </Row>
             <Row>
               <TextLabel>출입증아이디입력</TextLabel>
             </Row>
-            <Row>
+            <Row style={{ marginTop: 10 }}>
               <TextInput
                 onChangeText={value => setInputID(value)}
                 value={inputID} />
+              <View style={{ width: 10 }} />
               <InputButton onPress={() => {
                 const newID = inputID.substring(inputID.lastIndexOf('/') + 1);
                 setQRCodeID(newID);
               }}>
-                <TextContent style={{ color: colors.blue }}>확인</TextContent>
+                <TextButton >확인</TextButton>
               </InputButton>
             </Row>
           </>
       }
       {
         qrcodeId && qrcodeId.length > 0 ?
-          <Row>
+          <Row style={{ alignSelf: 'flex-end' }}>
             <InputButton
               onPress={() => {
                 Alert.alert('정말로 삭제합니까?', '', [
@@ -220,7 +236,7 @@ function QRCard({ route }: Props): React.ReactElement {
                   { text: '취소' }
                 ])
               }}>
-              <TextContent style={{ color: colors.blue }}>출입카드삭제</TextContent>
+              <TextButton >출입카드삭제</TextButton>
             </InputButton>
           </Row> :
           null
