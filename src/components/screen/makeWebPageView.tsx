@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { WebView } from 'react-native-webview';
 import { SafeAreaView, ActivityIndicator } from 'react-native';
-import { RootStackNavigationProps } from '../navigation/RootNavigator';
+import { MainTabNavigationProps } from '../navigation/MainTabNavigator';
 
 interface Props {
-  navigation: RootStackNavigationProps;
+  navigation: MainTabNavigationProps;
 }
 
 const makeWebPageView = (uri: string) => {

@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.seoullightandsalt"
+        applicationId "org.sls.webview"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -1,51 +1,29 @@
-import {
-  createBottomTabNavigator,
-  BottomTabNavigationProp,
-} from '@react-navigation/bottom-tabs';
+
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 import React from 'react';
-import { HomePage, Youtube } from '../screen';
-import { Image } from 'react-native';
-import images from '@/theme/images';
+import MainTabNavigator from './MainTabNavigator';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 export type RootStackParamList = {
-  HomePage: undefined;
+  MainTabNavigator: undefined;
 };
 
 export type RootStackNavigationProps<
-  T extends keyof RootStackParamList = 'HomePage'
-> = BottomTabNavigationProp<RootStackParamList, T>;
+  T extends keyof RootStackParamList = 'MainTabNavigator'
+  > = StackNavigationProp<RootStackParamList, T>;
 
 function RootNavigator(): React.ReactElement {
   return (
-    <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          if (route.name === 'HomePage') {
-            return (
-              <Image
-                source={images.SLS}
-                style={{
-                  width: size,
-                  height: size,
-                  tintColor: focused ? null : 'gray',
-                }}
-              />
-            );
-          } else if (route.name === 'Youtube') {
-            return <Ionicons name="logo-youtube" size={size} color={color} />;
-          }
-
-          // You can return any component that you like here!
-        },
-      })}
-      initialRouteName="HomePage">
-      <Tab.Screen name="HomePage" component={HomePage} />
-      <Tab.Screen name="Youtube" component={Youtube} />
-    </Tab.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
+      initialRouteName="MainTabNavigator">
+      <Stack.Screen name="MainTabNavigator" component={MainTabNavigator} />
+    </Stack.Navigator>
   );
 }
 

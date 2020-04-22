@@ -1,19 +1,18 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+  "extends": "airbnb",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "globals": {
+    "fetch": false,
+    "__DEV__": false
   },
-  plugins: ["@typescript-eslint"],
-  rules: {
-    "prettier/prettier": ["off", {}, {
-      "usePrettierrc": false
-    }],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
     "strict": 0,
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
@@ -38,7 +37,6 @@ module.exports = {
     "no-unused-expressions": ["error", { "allowShortCircuit": true }],
     "no-restricted-syntax": "off",
     "no-continue": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "react-native/no-inline-styles": "off"
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   },
 };
