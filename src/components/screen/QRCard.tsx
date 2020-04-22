@@ -167,6 +167,7 @@ function QRCard({ route }: Props): React.ReactElement {
         webviewVisible ?
           <WebView
             style={{ flex: 1 }}
+            startInLoadingState
             source={{ uri: qrcodeId ? (QRCARD_URL + qrcodeId) : QRCODE_APPLY_URL }}
             renderLoading={() =>
               <ActivityIndicator

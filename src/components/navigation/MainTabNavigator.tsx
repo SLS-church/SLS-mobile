@@ -11,6 +11,7 @@ import { Image } from 'react-native';
 import images from '@/theme/images';
 import styled from 'styled-components/native';
 import { QRCODE_APPLY_URL } from '@/constant';
+import colors from '@/theme/colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +39,7 @@ function MainTabNavigator(): React.ReactElement {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarLabel: () => {
+        tabBarLabel: ({ focused, color }) => {
           let label = route.name;
           switch (route.name) {
             case TabName.HomePage:
@@ -52,7 +53,7 @@ function MainTabNavigator(): React.ReactElement {
               break;
             default:
           }
-          return (<Text>{label}</Text>)
+          return (<Text style={{ color: focused ? color : colors.gray }}>{label}</Text>)
         },
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === TabName.HomePage) {
