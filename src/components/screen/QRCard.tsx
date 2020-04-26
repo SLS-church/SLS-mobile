@@ -32,6 +32,10 @@ const TextContent = styled.Text`
 const TextLabel = styled(TextContent)`
 `;
 
+const TextExample = styled.Text`
+  font-size: 18px;
+`;
+
 const TextButton = styled.Text`
   font-size: 20px;
   font-weight: bold;
@@ -187,9 +191,29 @@ function QRCard({ route }: Props): React.ReactElement {
               };
             }} /> :
           <>
-            <TextLabel style={{ fontSize: 20, fontWeight: '500' }}>출입증 정보가 입력되지 않았습니다.</TextLabel>
+            <Row>
+              <TextLabel>교인QR카드 URL 입력</TextLabel>
+            </Row>
+            <Row style={{ marginTop: 10 }}>
+              <TextInput
+                onChangeText={value => setInputID(value)}
+                value={inputID}
+                placeholder={"URL 전체를 복사해서 입력해주세요"} />
+              <View style={{ width: 10 }} />
+              <InputButton onPress={() => {
+                const newID = inputID.substring(inputID.lastIndexOf('/') + 1);
+                setQRCodeID(newID);
+              }}>
+                <TextButton >확인</TextButton>
+              </InputButton>
+            </Row>
+            <Row>
+              <TextExample>입력 예) https://qrjoin.sls.or.kr/basic/person-card/00000 </TextExample>
+            </Row>
+            <Row />
+            <TextLabel style={{ fontSize: 20, fontWeight: '500' }}>교인QR카드 정보가 입력되지 않았습니다.</TextLabel>
             <Row style={{ marginTop: 0 }}>
-              <TextLabel>출입증 발급 요청을 하시겠습니까?</TextLabel>
+              <TextLabel>교인QR카드 발급</TextLabel>
               <InputButton onPress={() => {
                 Alert.alert('출입증 QR코드 발급요청',
                   '출입증 QR코드 발급요청을 이미 하신 경우 다시 요청하실 필요가 없습니다. 출입증 발급 요청을 하시겠습니까?', [
@@ -201,22 +225,7 @@ function QRCard({ route }: Props): React.ReactElement {
                   }
                 ])
               }}>
-                <TextButton >예</TextButton>
-              </InputButton>
-            </Row>
-            <Row>
-              <TextLabel>출입증아이디입력</TextLabel>
-            </Row>
-            <Row style={{ marginTop: 10 }}>
-              <TextInput
-                onChangeText={value => setInputID(value)}
-                value={inputID} />
-              <View style={{ width: 10 }} />
-              <InputButton onPress={() => {
-                const newID = inputID.substring(inputID.lastIndexOf('/') + 1);
-                setQRCodeID(newID);
-              }}>
-                <TextButton >확인</TextButton>
+                <TextButton >신청</TextButton>
               </InputButton>
             </Row>
           </>
