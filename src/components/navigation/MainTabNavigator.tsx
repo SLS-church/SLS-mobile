@@ -10,13 +10,13 @@ import { HomePage, Youtube, QRCard } from '../screen';
 import { Image } from 'react-native';
 import images from '@/theme/images';
 import styled from 'styled-components/native';
-import { QRCODE_APPLY_URL } from '@/constant';
 import colors from '@/theme/colors';
 
 const Tab = createBottomTabNavigator();
 
 const Text = styled.Text`
   font-size: 12px;
+  margin: 0px 10px;
 `
 
 enum TabName {
