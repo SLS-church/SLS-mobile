@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* SeoulLightAndSaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SeoulLightAndSaltTests.m */; };
+		06C6818024572FEC00B966E3 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817724572FEB00B966E3 /* 58.png */; };
+		06C6818124572FEC00B966E3 /* 120-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817824572FEB00B966E3 /* 120-1.png */; };
+		06C6818224572FEC00B966E3 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817924572FEB00B966E3 /* 60.png */; };
+		06C6818324572FEC00B966E3 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817A24572FEB00B966E3 /* 1024.png */; };
+		06C6818424572FEC00B966E3 /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817B24572FEB00B966E3 /* 87.png */; };
+		06C6818524572FEC00B966E3 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817C24572FEB00B966E3 /* 80.png */; };
+		06C6818624572FEC00B966E3 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817D24572FEB00B966E3 /* 40.png */; };
+		06C6818724572FEC00B966E3 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817E24572FEB00B966E3 /* 180.png */; };
+		06C6818824572FEC00B966E3 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C6817F24572FEB00B966E3 /* 120.png */; };
 		1051176396982BB5FA66DB11 /* libPods-SeoulLightAndSalt-SeoulLightAndSaltTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBE0B87D8ACA6659837FA3D /* libPods-SeoulLightAndSalt-SeoulLightAndSaltTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* SeoulLightAndSaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SeoulLightAndSaltTests.m */; };
-		4338B49839476575953AE64B /* libPods-SeoulLightAndSalt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC9AF9607FDDB02B6080F2F /* libPods-SeoulLightAndSalt-tvOS.a */; };
 		A8386CFF80417BBD1612A6BE /* libPods-SeoulLightAndSalt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98983EACCE5CCBEA380D127C /* libPods-SeoulLightAndSalt.a */; };
-		FAEA7BD4BA04285833AA6A1E /* libPods-SeoulLightAndSalt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F948CE025758601F83F6D2C /* libPods-SeoulLightAndSalt-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +33,6 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = SeoulLightAndSalt;
 		};
-		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "SeoulLightAndSalt-tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +42,15 @@
 		00E356F21AD99517003FC87E /* SeoulLightAndSaltTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeoulLightAndSaltTests.m; sourceTree = "<group>"; };
 		0279ED430B8A07451034E2E3 /* Pods-SeoulLightAndSalt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulLightAndSalt.release.xcconfig"; path = "Target Support Files/Pods-SeoulLightAndSalt/Pods-SeoulLightAndSalt.release.xcconfig"; sourceTree = "<group>"; };
 		04A9E172591D45EB903F38CC /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		06C6817724572FEB00B966E3 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/58.png; sourceTree = "<group>"; };
+		06C6817824572FEB00B966E3 /* 120-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "120-1.png"; path = "SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/120-1.png"; sourceTree = "<group>"; };
+		06C6817924572FEB00B966E3 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 60.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/60.png; sourceTree = "<group>"; };
+		06C6817A24572FEB00B966E3 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1024.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/1024.png; sourceTree = "<group>"; };
+		06C6817B24572FEB00B966E3 /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 87.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/87.png; sourceTree = "<group>"; };
+		06C6817C24572FEB00B966E3 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/80.png; sourceTree = "<group>"; };
+		06C6817D24572FEB00B966E3 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/40.png; sourceTree = "<group>"; };
+		06C6817E24572FEB00B966E3 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 180.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/180.png; sourceTree = "<group>"; };
+		06C6817F24572FEB00B966E3 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = SeoulLightAndSalt/Images.xcassets/AppIcon.appiconset/120.png; sourceTree = "<group>"; };
 		0F948CE025758601F83F6D2C /* libPods-SeoulLightAndSalt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeoulLightAndSalt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* SeoulLightAndSalt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulLightAndSalt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SeoulLightAndSalt/AppDelegate.h; sourceTree = "<group>"; };
@@ -55,8 +60,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SeoulLightAndSalt/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SeoulLightAndSalt/main.m; sourceTree = "<group>"; };
 		258A06B894395CF448775362 /* Pods-SeoulLightAndSalt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulLightAndSalt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SeoulLightAndSalt-tvOSTests/Pods-SeoulLightAndSalt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeoulLightAndSalt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* SeoulLightAndSalt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeoulLightAndSalt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E0C2CB95E6E1EA7716B86F /* Pods-SeoulLightAndSalt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulLightAndSalt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SeoulLightAndSalt-tvOS/Pods-SeoulLightAndSalt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		39591D64F2114CF48A6690FC /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		4120CB4A36B94F3A88572DED /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
@@ -102,22 +105,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4338B49839476575953AE64B /* libPods-SeoulLightAndSalt-tvOS.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAEA7BD4BA04285833AA6A1E /* libPods-SeoulLightAndSalt-tvOSTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -183,6 +169,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -190,6 +177,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				06C6817D24572FEB00B966E3 /* 40.png */,
+				06C6817724572FEB00B966E3 /* 58.png */,
+				06C6817924572FEB00B966E3 /* 60.png */,
+				06C6817B24572FEB00B966E3 /* 87.png */,
+				06C6817C24572FEB00B966E3 /* 80.png */,
+				06C6817824572FEB00B966E3 /* 120-1.png */,
+				06C6817F24572FEB00B966E3 /* 120.png */,
+				06C6817E24572FEB00B966E3 /* 180.png */,
+				06C6817A24572FEB00B966E3 /* 1024.png */,
 				13B07FAE1A68108700A75B9A /* SeoulLightAndSalt */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SeoulLightAndSaltTests */,
@@ -208,8 +204,6 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* SeoulLightAndSalt.app */,
 				00E356EE1AD99517003FC87E /* SeoulLightAndSaltTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* SeoulLightAndSalt-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,45 +275,6 @@
 			productReference = 13B07F961A680F5B00A75B9A /* SeoulLightAndSalt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SeoulLightAndSalt-tvOS" */;
-			buildPhases = (
-				6C84CD02826ABC1217BA728B /* [CP] Check Pods Manifest.lock */,
-				FD10A7F122414F3F0027D42C /* Start Packager */,
-				2D02E4771E0B4A5D006451C7 /* Sources */,
-				2D02E4781E0B4A5D006451C7 /* Frameworks */,
-				2D02E4791E0B4A5D006451C7 /* Resources */,
-				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SeoulLightAndSalt-tvOS";
-			productName = "SeoulLightAndSalt-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2D02E48F1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SeoulLightAndSalt-tvOSTests" */;
-			buildPhases = (
-				20AB00F2545BE529E430D28C /* [CP] Check Pods Manifest.lock */,
-				2D02E48C1E0B4A5D006451C7 /* Sources */,
-				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
-				2D02E48E1E0B4A5D006451C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
-			);
-			name = "SeoulLightAndSalt-tvOSTests";
-			productName = "SeoulLightAndSalt-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* SeoulLightAndSalt-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -335,15 +290,6 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = X7MAQW2MB2;
 						LastSwiftMigration = 1120;
-					};
-					2D02E47A1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-					};
-					2D02E48F1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
 				};
 			};
@@ -362,8 +308,6 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* SeoulLightAndSalt */,
 				00E356ED1AD99517003FC87E /* SeoulLightAndSaltTests */,
-				2D02E47A1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,23 +324,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C6818024572FEC00B966E3 /* 58.png in Resources */,
+				06C6818124572FEC00B966E3 /* 120-1.png in Resources */,
+				06C6818224572FEC00B966E3 /* 60.png in Resources */,
+				06C6818324572FEC00B966E3 /* 1024.png in Resources */,
+				06C6818424572FEC00B966E3 /* 87.png in Resources */,
+				06C6818524572FEC00B966E3 /* 80.png in Resources */,
+				06C6818624572FEC00B966E3 /* 40.png in Resources */,
+				06C6818724572FEC00B966E3 /* 180.png in Resources */,
+				06C6818824572FEC00B966E3 /* 120.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E4791E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		1545BF80CDC8C3B0213E3B04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -433,64 +371,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SeoulLightAndSalt-SeoulLightAndSaltTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20AB00F2545BE529E430D28C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeoulLightAndSalt-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		6C84CD02826ABC1217BA728B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeoulLightAndSalt-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -634,25 +514,6 @@
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FD10A7F122414F3F0027D42C /* Start Packager */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Start Packager";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -673,23 +534,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D02E4771E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DCD954D1E0B4F2C00145EB5 /* SeoulLightAndSaltTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -697,11 +541,6 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* SeoulLightAndSalt */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* SeoulLightAndSalt-tvOS */;
-			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -747,6 +586,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = M3N2ZS7XDW;
 				INFOPLIST_FILE = SeoulLightAndSaltTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -775,6 +615,7 @@
 					"FB_SONARKIT_ENABLED=1",
 				);
 				INFOPLIST_FILE = SeoulLightAndSalt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1.2;
 				OTHER_LDFLAGS = (
@@ -786,7 +627,7 @@
 				PRODUCT_NAME = SeoulLightAndSalt;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -798,8 +639,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = X7MAQW2MB2;
+				DEVELOPMENT_TEAM = M3N2ZS7XDW;
 				INFOPLIST_FILE = SeoulLightAndSalt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1.2;
 				OTHER_LDFLAGS = (
@@ -810,118 +652,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.slschurch.SeoulLightAndSalt;
 				PRODUCT_NAME = SeoulLightAndSalt;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		2D02E4971E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32E0C2CB95E6E1EA7716B86F /* Pods-SeoulLightAndSalt-tvOS.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SeoulLightAndSalt-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SeoulLightAndSalt-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		2D02E4981E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C14A4B10BA94FD3748D9498 /* Pods-SeoulLightAndSalt-tvOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SeoulLightAndSalt-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SeoulLightAndSalt-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
-		2D02E4991E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA761E53AE0246D72CCF5D55 /* Pods-SeoulLightAndSalt-tvOSTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SeoulLightAndSalt-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SeoulLightAndSalt-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulLightAndSalt-tvOS.app/SeoulLightAndSalt-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-			};
-			name = Debug;
-		};
-		2D02E49A1E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 258A06B894395CF448775362 /* Pods-SeoulLightAndSalt-tvOSTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SeoulLightAndSalt-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.SeoulLightAndSalt-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulLightAndSalt-tvOS.app/SeoulLightAndSalt-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
 		};
@@ -1055,24 +787,6 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SeoulLightAndSalt-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4971E0B4A5E006451C7 /* Debug */,
-				2D02E4981E0B4A5E006451C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SeoulLightAndSalt-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4991E0B4A5E006451C7 /* Debug */,
-				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
