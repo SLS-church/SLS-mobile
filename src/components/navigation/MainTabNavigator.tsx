@@ -6,11 +6,14 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import React from 'react';
-import { HomePage, Youtube, QRCard } from '../screen';
+import { WebPageView, QRCard } from '../screen';
 import { Image } from 'react-native';
 import images from '@/theme/images';
 import styled from 'styled-components/native';
 import colors from '@/theme/colors';
+
+const HOME_PAGE_URI = 'http://m.sls.or.kr/';
+const YOUTUBE_URI = 'https://www.youtube.com/channel/UCdysNhgE7XTGuMXaBBg41bA';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +21,7 @@ const Text = styled.Text`
   font-size: 12px;
   margin: 0px 10px;
 `
+
 
 enum TabName {
   HomePage = "Hompage",
@@ -76,8 +80,8 @@ function MainTabNavigator(): React.ReactElement {
         },
       })}
       initialRouteName={TabName.HomePage}>
-      <Tab.Screen name={TabName.HomePage} component={HomePage} />
-      <Tab.Screen name={TabName.Youtube} component={Youtube} />
+      <Tab.Screen name={TabName.HomePage} component={WebPageView} initialParams={{baseUrl: HOME_PAGE_URI}} />
+      <Tab.Screen name={TabName.Youtube} component={WebPageView} initialParams={{baseUrl: YOUTUBE_URI}} />
       <Tab.Screen name={TabName.QRCard} component={QRCard} />
     </Tab.Navigator>
   );
