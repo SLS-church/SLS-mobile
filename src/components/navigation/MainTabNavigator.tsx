@@ -79,7 +79,8 @@ function MainTabNavigator(): React.ReactElement {
           // You can return any component that you like here!
         },
       })}
-      initialRouteName={TabName.HomePage}>
+      initialRouteName={TabName.HomePage}
+      backBehavior={'none'}>
       <Tab.Screen name={TabName.HomePage} component={WebPageView} initialParams={{baseUrl: HOME_PAGE_URI}} />
       <Tab.Screen name={TabName.Youtube} component={WebPageView} initialParams={{baseUrl: YOUTUBE_URI}} />
       <Tab.Screen name={TabName.QRCard} component={QRCard} />

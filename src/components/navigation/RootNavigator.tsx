@@ -28,7 +28,7 @@ function RootNavigator(): React.ReactElement {
     snackbarContext.show({
       text: '앱을 종료하시려면 뒤로가기 버튼을 한 번 더 누르세요.',
       containerStyle: {
-        backgroundColor: '#000000a0'
+        backgroundColor: '#00000080'
       },
       timer: 1000,
     })
