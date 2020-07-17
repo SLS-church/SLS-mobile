@@ -1,9 +1,9 @@
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
-import React from 'react';
+import React, { useEffect } from 'react';
 import MainTabNavigator from './MainTabNavigator';
+import { BackHandler } from 'react-native';
+import { useSnackbarContext } from '@dooboo-ui/snackbar';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +16,30 @@ export type RootStackNavigationProps<
   > = StackNavigationProp<RootStackParamList, T>;
 
 function RootNavigator(): React.ReactElement {
+  const [backPressTime, setBackPressTime] = React.useState(0);
+
+  const snackbarContext = useSnackbarContext();
+  const onBackPress = () => {
+    const now = Date.now();
+    if (now - backPressTime < 1000) {
+      return false;
+    }
+    setBackPressTime(now);
+    snackbarContext.show({
+      text: '앱을 종료하시려면 뒤로가기 버튼을 한 번 더 누르세요.',
+      containerStyle: {
+        backgroundColor: '#000000a0'
+      },
+      timer: 1000,
+    })
+    return true;
+  }
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', onBackPress);
+
+    return () =>
+      BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+  }, [backPressTime])
   return (
     <Stack.Navigator
       screenOptions={{

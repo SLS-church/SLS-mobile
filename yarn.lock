@@ -665,6 +665,13 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@dooboo-ui/snackbar@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@dooboo-ui/snackbar/-/snackbar-0.0.1.tgz#0dedfe6f6bc5db3a3913ec0e025f0d65edc9f6d6"
+  integrity sha512-WxlRhJTTnpkmssFX1T51it3EbLGkpVZSAGaTzsh0a2GlRGurJTy8A/4gB1rfyTHSkaiceM5gldHCaSzBDr88tA==
+  dependencies:
+    dooboolab-welcome "^1.1.1"
+
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
@@ -2515,6 +2522,11 @@ domutils@^1.7.0:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
+
+dooboolab-welcome@^1.1.1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.2.0.tgz#295818ce85a8e97dc90c0ec0510b4008e2d722dc"
+  integrity sha512-XgEbjJHAsKLge/e8jtuHsv84Ovg1Gx0GvnOTOmOlVGV1643nduTAkT3fyo/mxKbzvyXBr47RHaJAY4R2toI0UA==
 
 dot-prop@^4.1.0:
   version "4.2.0"

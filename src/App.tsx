@@ -9,6 +9,7 @@
 import React from 'react';
 import { NavigationContainer, useLinking, NavigationContainerRef } from '@react-navigation/native';
 import RootNavigator from '@/components/navigation/RootNavigator';
+import { SnackbarProvider } from '@dooboo-ui/snackbar';
 
 function App(): React.ReactElement {
 
@@ -20,7 +21,7 @@ function App(): React.ReactElement {
 
   const [isReady, setIsReady] = React.useState(false);
   const [initialState, setInitialState] = React.useState();
-
+  
   React.useEffect(() => {
     Promise.race([
       getInitialState(),
@@ -48,7 +49,9 @@ function App(): React.ReactElement {
 
   return (
     <NavigationContainer initialState={initialState} ref={ref}>
-      <RootNavigator />
+      <SnackbarProvider>
+        <RootNavigator />
+      </SnackbarProvider>
     </NavigationContainer>
   );
 };

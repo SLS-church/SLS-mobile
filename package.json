@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
+    "@dooboo-ui/snackbar": "^0.0.1",
     "@react-native-community/async-storage": "^1.9.0",
     "@react-native-community/masked-view": "^0.1.8",
     "@react-navigation/bottom-tabs": "^5.2.6",
