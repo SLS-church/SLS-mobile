@@ -62,6 +62,10 @@ const TextInput = styled.TextInput`
   padding: 4px;
 `;
 
+const INJECTED_JAVASCRIPT = `
+document.getElementById("btnThisWindowSave").style.visibility = 'hidden';
+`;
+
 interface Props {
   route: {
     params: {
@@ -179,6 +183,10 @@ function QRCard({ route }: Props): React.ReactElement {
                 size="large"
                 color="#0000ff" />
             }
+            onError={(error) => {
+              console.error(error);
+            }}
+            injectedJavaScript={INJECTED_JAVASCRIPT}
             onNavigationStateChange={(newNavState) => {
               const { url } = newNavState;
               if (!url) return;
