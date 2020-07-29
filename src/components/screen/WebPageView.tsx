@@ -72,6 +72,11 @@ function WebPageView(props: Props): React.ReactElement {
             }
             onNavigationStateChange={state => setNavState(state)}
             allowsFullscreenVideo
+            mixedContentMode="always"
+            onError={syntheticEvent => {
+                const { nativeEvent } = syntheticEvent;
+                console.warn('WebView error: ', nativeEvent);
+            }}
             source={{ uri: baseUrl }} />
       }
     </SafeAreaView>
