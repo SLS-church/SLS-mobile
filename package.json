@@ -1,6 +1,6 @@
 {
   "name": "SeoulLightAndSalt",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "android": "cd android && ./gradlew installDebug && cd .. && yarn start:android",
